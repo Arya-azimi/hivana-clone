@@ -1,3 +1,3 @@
-export * from "./footer-constants";
+export * from "./footer";
 export * from "./pics";
-export * from "./header-constants";
+export * from "./header";
