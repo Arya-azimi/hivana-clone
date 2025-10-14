@@ -1,6 +1,7 @@
 "use client";
 
 import { footerLinks, footerSocial, Pictures } from "@/lib";
+import { Phone } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,8 +11,8 @@ export default function Footer() {
   const pathname = usePathname();
   const logoInf = Pictures.logo;
   return (
-    <>
-      <div className="w-screen shadow-2xl flex justify-center items-center mx-auto py-4 bg-emerald-950 ">
+    <div className="overflow-x-hidden">
+      <div className="w-full shadow-2xl flex justify-center items-center py-4 bg-emerald-950 ">
         <div className="max-w-7xl flex flex-col justify-center items-center p-4 lg:w-full lg:flex-row lg:items-center lg:justify-between ">
           <div className="flex flex-col justify-center items-center lg:flex-row lg:border-l lg:pl-10 lg:border-emerald-500 ">
             <Image
@@ -37,11 +38,13 @@ export default function Footer() {
             <div className="">
               <p className="text-white text-xs">09104082056</p>
             </div>
-            <div className="">icon</div>
+            <div className="">
+              <Phone className="text-white" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-screen shadow-2xl flex justify-center items-center mx-auto py-4 bg-emerald-900">
+      <div className="w-full shadow-2xl flex justify-center items-center py-4 bg-emerald-900">
         <div className="max-w-7xl justify-center grid lg:grid-cols-2 p-4 lg:w-full ">
           <div className="border border-gray-900 rounded-2xl px-4">
             <div className="footer-pic border-b py-4">
@@ -60,8 +63,8 @@ export default function Footer() {
               محبوب در زمینه ی طراحی سایت تبدیل کرده است.
             </p>
           </div>
-          <div className="grid lg:grid-cols-2 mt-4 lg:mt-0 lg:mr-8 w-full">
-            <div className="my-4 lg:my-0 lg:row-span-2 w-full">
+          <div className="grid lg:grid-cols-2 mt-4 lg:mt-0 lg:mr-8 w-full px-4">
+            <div className="my-4 lg:my-0 lg:row-span-2 w-full lg:pl-4">
               <h2 className="text-white font-semibold text-xl">
                 دسترسی های سریع
               </h2>
@@ -87,7 +90,7 @@ export default function Footer() {
                 })}
               </ul>
             </div>
-            <div className="my-4 lg:my-0 lg:row-span-1 w-full">
+            <div className="my-4 lg:my-0 lg:row-span-1 w-full lg:pl-4">
               <h2 className="text-white font-semibold text-xl">
                 راه های ارتباطی
               </h2>
@@ -108,7 +111,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-screen flex justify-center items-center mx-auto py-4 bg-emerald-900 border-y p-2">
+
+      <div className="w-full flex justify-center items-center py-4 bg-emerald-900 border-y p-2">
         <div className="max-w-7xl justify-center items-center">
           <p className="text-white">
             تمامی حقوق این وبسایت متعلق به{" "}
@@ -116,6 +120,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
