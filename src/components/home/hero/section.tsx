@@ -5,8 +5,8 @@ import Image from "next/image";
 export function HeroSection() {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 my-4 ">
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl p-8 lg:flex-row lg:justify-between">
+      <div className="max-w-7xl mx-auto px-6 my-4 mt-21">
+        <div className="flex flex-col items-center bg-lime-100 rounded-xl p-8 lg:flex-row lg:justify-between">
           <div
             className="bg-cover bg-center"
             style={{ backgroundImage: `url(${homePics.hero1.src})` }}

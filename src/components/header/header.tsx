@@ -12,8 +12,8 @@ export default function Header() {
   const [isMenuOpen, toggleMenu] = useToggle();
   return (
     <>
-      <header className="max-w-7xl mx-auto px-6">
-        <div className=" border mx-auto border-black mt-4 py-3 rounded-2xl">
+      <header className="fixed top-3 left-0 right-0 z-10 max-w-7xl mx-auto px-6">
+        <div className=" border mx-auto border-black py-3 rounded-2xl bg-white shadow-2xl">
           <div className="px-4 flex justify-between items-center">
             <div className="flex justify-between w-2/3 items-center">
               <Image

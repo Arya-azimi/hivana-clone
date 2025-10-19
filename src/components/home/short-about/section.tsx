@@ -46,20 +46,14 @@ export function ShortAbout() {
               استانداردهای روز جهان منطبق نمایند.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 p-4 items-center lg:flex-row lg:justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8 p-4 items-center lg:flex-row lg:justify-between">
             {AboutPersents.map((item) => (
               <div
-                className="border bg-white cursor-pointer rounded-xl shadow-2xl text-center p-3 transition-all duration-200 ease-in-out hover:drop-shadow-2xl hover:bg-amber-50"
+                className={`border bg-white cursor-pointer rounded-xl shadow-2xl text-center p-3 transition-all duration-200 ease-in-out hover:drop-shadow-2xl hover:bg-amber-50 ${item.customStyle}`}
                 key={item.text}
               >
-                <div className="flex items-center ">
-                  <Image
-                    src={item.logo.src}
-                    alt=""
-                    width={80}
-                    height={80}
-                    className="w-1/4"
-                  />
+                <div className="flex items-center  ">
+                  <Image src={item.logo.src} alt="" width={80} height={80} />
                   <div className="flex flex-col p-1 ">
                     <h3 className="text-justify text-md lg:text-lg w-full font-extrabold">
                       {item.label}

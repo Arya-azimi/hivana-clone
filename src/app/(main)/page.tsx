@@ -1,8 +1,10 @@
 import {
+  ContactForm,
   FeaturesSection,
   HeroSection,
   ResumeSlider,
   ShortAbout,
+  PricingPlan,
 } from "@/components/home";
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <FeaturesSection />
       <ResumeSlider />
       <ShortAbout />
+      <PricingPlan />
+      <ContactForm />
     </>
   );
 }
